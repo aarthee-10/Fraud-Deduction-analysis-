@@ -1,1 +1,2 @@
 # Fraud-Deduction-analysis-
+A LightGBM model that flags electricity and gas customers likely to be committing meter fraud, so inspectors can prioritise the riskiest accounts. It aggregates 4.5M invoices into client-level features (consumption stats, billing gaps, trend, seasonality, tenure) across 135K clients, only 5.6% of them fraudulent. With stratified 5-fold CV and class weighting, the baseline reaches 0.866 ROC-AUC and 0.79 recall. Predictions are converted into Low, Medium, High and Critical risk tiers.
